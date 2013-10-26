@@ -10,7 +10,7 @@
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "4.0.x",
-        "stripe/stripe-php": "v1.8.1"
+        "stripe/stripe-php": "1.9.x"
     },
     "autoload": {
         "classmap": [
