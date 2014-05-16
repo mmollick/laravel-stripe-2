@@ -43,7 +43,7 @@ return array(
 );
 ~~~
 
-If you insist on keeping your API credentials in your config, you can set your API Key and Publishable Key in `app/config/packages/abodeo/laravel-stripe/stripe.php`:
+Once you have published the configuration files, you can set your API Key and Publishable Key in `app/config/packages/abodeo/laravel-stripe/stripe.php`:
 
 ~~~
 <?php
