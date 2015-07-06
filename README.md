@@ -1,4 +1,4 @@
-Stripe for Laravel 4
+Stripe 2.0 for Laravel 4
 ==============
 
 Integrates the Stripe PHP library with Laravel 4 via a ServiceProvider, config, and Blade extensions.
@@ -9,7 +9,7 @@ Integrates the Stripe PHP library with Laravel 4 via a ServiceProvider, config, 
 Include laravel-stripe as a dependency in composer.json:
 
 ~~~
-"abodeo/laravel-stripe": "dev-master"
+"mmollick/laravel-stripe": "dev-master"
 ~~~
 
 Run `composer install` to download the dependency.
@@ -19,7 +19,7 @@ Add the ServiceProvider to your provider array within `app/config/app.php`:
 ~~~
 'providers' => array(
 
-    'Abodeo\LaravelStripe\LaravelStripeServiceProvider'
+    'MMollick\LaravelStripe\LaravelStripeServiceProvider'
 
 )
 ~~~

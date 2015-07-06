@@ -1,8 +1,6 @@
-<?php namespace Abodeo\LaravelStripe;
+<?php namespace MMollick\LaravelStripe;
 
 use Illuminate\Support\ServiceProvider;
-
-use \Stripe;
 
 class LaravelStripeServiceProvider extends ServiceProvider {
 
@@ -20,7 +18,7 @@ class LaravelStripeServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('abodeo/laravel-stripe');
+        $this->package('mmollick/laravel-stripe');
 
         /*
          * Load Stripe configuration
@@ -31,7 +29,7 @@ class LaravelStripeServiceProvider extends ServiceProvider {
          * Read more: http://laravel.com/docs/configuration#environment-configuration
          */
         $api_key = isset($_ENV['stripe.api_key']) ? $_ENV['stripe.api_key'] : $this->app['config']->get('laravel-stripe::stripe.api_key');
-        Stripe::setApiKey($api_key);
+        \Stripe\Stripe::setApiKey($api_key);
 
         $publishableKey = isset($_ENV['stripe.publishable_key']) ? $_ENV['stripe.publishable_key'] : $this->app['config']->get('laravel-stripe::stripe.publishable_key');
 

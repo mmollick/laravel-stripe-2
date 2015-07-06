@@ -1,23 +1,23 @@
 {
-    "name": "abodeo/laravel-stripe",
+    "name": "mmollick/laravel-stripe",
     "description": "",
     "authors": [
         {
-            "name": "Sean Ballew",
-            "email": "sballew7@gmail.com"
-        }
+            "name": "Michael Mollick",
+            "email": "mollick2@gmail.com"
+        },
     ],
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "~4.0",
-        "stripe/stripe-php": "~1.9"
+        "stripe/stripe-php": "2.*"
     },
     "autoload": {
         "classmap": [
             "src/migrations"
         ],
         "psr-0": {
-            "Abodeo\\LaravelStripe": "src/"
+            "MMollick\\LaravelStripe": "src/"
         }
     },
     "minimum-stability": "dev"
