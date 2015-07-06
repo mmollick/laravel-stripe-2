@@ -3,7 +3,7 @@
 return array(
 	'api_key' => 'my-api-key',
 
-	'publishable_key' => 'my-pub-key'
+	'publishable_key' => 'my-pub-key',
 
 	'api_version' => null,
 );
