@@ -38,7 +38,8 @@ If you have not setup a "dot file", read Laravel's "[Protecting Sensitive Config
 return array(
   'stripe' => array(
     'api_key' => 'my-api-key',
-    'publishable_key' => 'my-pub-key'
+    'publishable_key' => 'my-pub-key',
+    'api_version' => null,
   )
 );
 ~~~
@@ -49,7 +50,8 @@ If you insist on keeping your API credentials in your config, you can set your A
 <?php
 return array(
   'api_key' => 'my-api-key',
-  'publishable_key' => 'my-pub-key'
+  'publishable_key' => 'my-pub-key',
+  'api_version' => null,
 );
 ~~~
 
