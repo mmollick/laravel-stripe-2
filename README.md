@@ -3,6 +3,7 @@ Stripe 2.0 for Laravel 4
 
 Integrates the Stripe PHP library with Laravel 4 via a ServiceProvider, config, and Blade extensions.
 
+*This is originally a fork from the [abodeo/laravel-stripe](https://github.com/Abodeo/laravel-stripe) package*
 
 ### Installation
 
@@ -66,4 +67,3 @@ In your Blade views, you may output your Stripe Publishable Key using the `@stri
           data-key="@stripeKey"
           data-amount="5000" data-description="One year's subscription"></script>
 ~~~
-
